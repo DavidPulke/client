@@ -1,6 +1,6 @@
 import { FunctionComponent, useEffect, useState } from "react";
 import { observeElementsWithClass } from "../services/viewpoint";
-import Gallery from "./miniComps/gallery";
+import Gallery from "./miniComps/Gallery";
 
 interface HomeProps {
 
