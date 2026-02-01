@@ -15,10 +15,10 @@ export const getServices = () => {
 }
 
 
-export const sendToWhatsApp = (service: Service, color: string, time: string, date: string) => {
-    const formatDateTime = (date: string, time: string) => {
+export const sendToWhatsApp = (service: Service, color: string, date: string) => {
+    const formatDateTime = (date: string) => {
         const [year, month, day] = date.split("-");
-        return `${day}/${month}/${year} ${time}`;
+        return `${day}/${month}/${year}`;
     };
 
 
@@ -30,7 +30,7 @@ export const sendToWhatsApp = (service: Service, color: string, time: string, da
 שירות: *${service.type}*
 צבע: *${color}*
 מחיר:*${service.price}₪*
-תאריך ושעה מועדפים: *${formatDateTime(date, time)}*
+תאריך: *${formatDateTime(date)}*
 `;
 
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;

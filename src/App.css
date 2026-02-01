@@ -140,8 +140,8 @@ nav ul li a:hover {
 .logo {
   text-decoration: none;
   position: fixed;
-  top: 10px;
-  right: 15px;
+  top: 12px;
+  right: 20px;
   width: 40px;
   text-align: center;
   display: flex;
@@ -219,6 +219,22 @@ nav ul li a:hover {
   font-size: 5rem;
 }
 
+@media (max-width: 700px) {
+
+  #services li {
+    text-align: start;
+    font-size: 2rem;
+
+    & .pink {
+      color: #ff08d6;
+    }
+  }
+
+  #services h1 {
+    font-size: 4rem;
+  }
+}
+
 /* Testimonials Section */
 #testimonials {
   background-color: #ffffff;
@@ -271,11 +287,14 @@ nav ul li a:hover {
 
 .card {
   width: 100%;
-  height: 80%;
+  aspect-ratio: 4 / 3;
   border-radius: 20px;
+  overflow: hidden;
+  background-color: #f0f0f0;
 }
 
 .card img {
+  display: block;
   width: 100%;
   height: 100%;
   border-radius: 20px;

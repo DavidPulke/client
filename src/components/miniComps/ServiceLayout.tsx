@@ -27,7 +27,7 @@ const ServiceLayout: FunctionComponent<ServiceLayoutProps> = ({ services }) => {
 
             </div>
         ))}
-        {service && <LivePreview service={service} />}
+        {service && <LivePreview service={service} setService={setService} />}
 
     </div>);
 }

@@ -9,7 +9,6 @@ const Navbar: FunctionComponent<NavbarProps> = () => {
     return (<>
         <span className="logo">
             <img src="/images/YaelLogo.png" alt="Logo" />
-            <span className="under-line">&nbsp;</span>
         </span>
 
         <nav>
